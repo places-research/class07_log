@@ -1,0 +1,371 @@
+---
+title: "Logística"
+subtitle: "Encontros Síncronos 06 e 07"
+author: 
+  - <br></br>Renata Oliveira
+date: '24/02/2021'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["xaringan-themer.css", "slides.css"]
+    nature:
+      ratio: "16:9"
+      highlightLines: true
+      highlightStyle: solarized-light
+      countIncrementalSlides: false
+      slideNumberFormat: |
+         <div class="progress-bar-container">
+           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+           </div>
+         </div>
+
+---
+
+```{r child = "setup.Rmd"}
+```
+
+```{r xaringan-tile-view, echo=FALSE}
+xaringanExtra::use_tile_view()
+```
+
+```{r xaringan-editable, echo=FALSE}
+xaringanExtra::use_editable(expires = 1)
+```
+
+```{r xaringan-panelset, echo=FALSE, message=FALSE, warning=FALSE}
+xaringanExtra::use_panelset()
+xaringanExtra::style_panelset_tabs(panel_tab_font_family = "sans-serif")
+```
+
+```{r xaringanExtra-clipboard, echo=FALSE}
+htmltools::tagList(
+  xaringanExtra::use_clipboard(
+    button_text = "<i class=\"fa fa-clipboard\"></i>",
+    success_text = "<i class=\"fa fa-check\" style=\"color: #90BE6D\"></i>",
+    error_text = "<i class=\"fa fa-times-circle\" style=\"color: #F94144\"></i>"
+  ),
+  rmarkdown::html_dependency_font_awesome()
+)
+```
+
+```{r xaringan-fit-screen, echo=FALSE}
+xaringanExtra::use_fit_screen()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(
+  hover_code_line = TRUE,         #<<
+  mute_unhighlighted_code = TRUE  #<<
+)
+```
+
+```{css include=FALSE}
+.panelset {
+   --panel-tab-foreground: currentColor;
+   --panel-tab-background: unset;
+   --panel-tab-active-foreground: currentColor;
+   --panel-tab-active-background: unset;
+   --panel-tab-active-border-color: currentColor;
+   --panel-tab-hover-foreground: currentColor;
+   --panel-tab-hover-background: unset;
+   --panel-tab-hover-border-color: currentColor;
+   --panel-tab-inactive-opacity: 0.5;
+   --panel-tabs-border-bottom: #ddd;
+   --panel-tab-font-family: Sen;
+   --panel-tab-background-color-active: #fffbe0;
+   --panel-tab-border-color-active: #023d4d;
+}
+
+.panelset .panel-tabs .panel-tab > a {
+	color: #023d4d;
+}
+
+.panelset .panel-tabs {
+  font-size: 0.5rem;
+}
+```
+
+Grupo 1: [Cadeia de suprimentos de medicamentos](https://www.youtube.com/watch?v=Tx3ERP33i_U)   
+.small[Amanda Pimenta e Pedro Henrique Reis]
+
+Grupo 2: [Digitalização do Setor automotivo](https://youtu.be/kolxomSVSrQ)   
+.small[Ana Luiza Jorge, Amanda Harumy, Camila Correa, Flávia Sakai e Larissa Costa]
+
+Grupo 3:  [Fluxo financeiro e digitalização](https://youtu.be/1BzRM178vyU)   
+.small[Camila Pacífico, Maria Fernanda e Rafaela Cristina]
+
+Grupo 4: [Economia da recorrência](https://www.youtube.com/watch?v=NZeoI-E3oJ4&feature=youtu.be)   
+.small[Gabriel Gestaldi e ....]
+
+Grupo 5: [Varejo e digitalização - E-commerce](https://www.youtube.com/watch?v=kfa7IScuC4c&feature=youtu.be&ab_channel=HarleyViana)   
+.small[Raphael Nicolete, Harley Viana, Helen Amorim e Larissa Freitas]
+
+Grupo 6: [Aplicativo de entregas de bebidas](https://youtu.be/YwNbxe83Ejs)  
+.small[Felipe Caxito, Lucas Teixeira, Matheus Troian, Renato Canuto e Patrícia Morozesk]
+
+---
+class: center, middle
+
+## Retrospecto
+
+---
+
+## Definições
+
+### Logística
+
+.midi[
+.question[
+“**Logística** é dispor a **mercadoria ou o serviço** certo, no **lugar** certo, no **tempo** certo e nas **condições desejadas**, ao mesmo tempo em que fornece a **maior contribuição à empresa**”. 
+(Ballou, 2001)
+]
+]
+
+### Gestão Cadeia de Suprimentos
+
+.question[
+.midi[
+**Cadeia de suprimentos** é a estrutura consolidada e integrada, em níveis estratégico, tático e operacional, entre agentes de produção, mercadológicos, logísticos e sociedade, para que seja possível coordenar as operações de maneira a garantir a gestão orientada à logística, tendo como objetivo o _trade-off_ entre **responsividade** e **eficiência**, além de garantia de um contexto sustentável de desenvolvimento por ações **socialmente responsáveis** e **resilientes.** 
+]
+]
+
+---
+
+## Fatores-chave de desempenho
+
+- Instalações   
+- Estoques   
+- Transportes   
+- Informação   
+- Sourcing   
+- Pricing
+
+---
+
+class: center, middle
+
+## Transportes
+
+---
+# Modos de transporte
+
+Quais são os modos utilizados para movimentação de cargas?
+
+
+--
+
+Rodoviário
+
+--
+
+Ferroviário
+
+--
+
+Aquaviário
+
+--
+
+Dutoviário
+
+--
+
+Aéreo
+
+--
+
+Eletrônico
+
+
+---
+
+class: center, middle
+
+## Qual o(s) problema(s) do Brasil em relação à movimentação de cargas em escala regional?
+
+
+---
+
+class: center
+
+### No mundo....
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/japao.png")
+```
+
+---
+
+class: center
+
+### No mundo....
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/singapore.png")
+```
+
+---
+
+class: center
+
+### No mundo....
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/fly_tax.png")
+```
+
+---
+
+class: center
+
+### No mundo....
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/zero_emission.png")
+```
+
+---
+
+class: center
+
+### No mundo....
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/electric vechicle.png")
+```
+
+---
+
+class: center
+
+### No mundo....
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, out.width="50%"}
+knitr::include_graphics("./img/growth_emission.png")
+```
+
+---
+### Qual o nosso problema?
+Preço do petróleo?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/diesel.png")
+```
+
+---
+
+### Qual o nosso problema?
+Demanda x oferta?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/peroba.png")
+```
+
+---
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/matriz_modal.png")
+```
+
+---
+
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/matriz.png")
+```
+
+---
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/ferro.png")
+```
+
+---
+
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/investimento.png")
+```
+
+---
+
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/matriz_compara.png")
+```
+
+---
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/ferrovias_mundo.png")
+```
+
+---
+### Qual o nosso problema?
+Matriz modal?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/conteiner.png")
+```
+
+---
+
+### Como resolver?
+
+"Bolsa Caminhoneiro"?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/bolsa.png")
+```
+
+---
+
+### Como resolver?
+
+"Bolsa Caminhoneiro"?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/rebate.png")
+```
+
+---
+
+### Como resolver?
+
+Realocação de recursos? 
+Eliminar piso de gastos com educação e saúde para subsidiar Diesel?
+Intervir na Petrobrás?
+Privatizar a Petrobras?
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+knitr::include_graphics("./img/calamidade.png")
+```
+
+---
+
+
+## Atividades da semana
+
+- Projeto integrador  
+  - Diretrizes até sábado
+  - Foco na definição de um problema logístico a ser explorado por meio de informação secundária.
+  
+---
+
+class: center, middle
+
+.larger[
+**DÚVIDAS?**
+]
